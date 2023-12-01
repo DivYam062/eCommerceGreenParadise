@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "ClashDisplay SemiBold";
+    src: url("../Product_Page/fonts/ClashDisplay-Semibold.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: "ClashDisplay Regular";
+    src: url("../Product_Page/fonts/ClashDisplay-Regular.otf") format("opentype");
+  }
+  * {
+    font-family: "ClashDisplay Regular", sans-serif;
+  }
+
+  /* ------------------------------ */
+
+  #container{
+    padding-top: 80px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  input {
+    border-radius: 8px;
+    border: 2px solid grey;
+    padding: 12px;
+    width: 250px;
+  }
+  .details {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .buttons {
+    gap: 4px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .checkbox{
+    margin-top: 25px;
+  }
+  #cont {
+    margin-top: 5px;
+    /* border: 1px solid red; */
+    padding: 15px;
+    justify-content: end;
+  }
+  #delivery {
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+  }
+  
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(24, 81, 26);
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    letter-spacing: 1px;
+  }
