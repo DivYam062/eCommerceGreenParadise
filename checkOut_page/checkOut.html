@@ -75,9 +75,51 @@
                     <option value="Uttarakhand">Uttarakhand</option>
                     <option value="West Bengal">West Bengal</option>
                 </select>
-                
+
+                <div class="city">
+                    <input type="text" id="city" placeholder="City" required/>
+                    <input type="number" id="pin" placeholder="PIN" required/>
+                </div>
+
+                <div class="buttons">
+                    <button id="backbtn" type="submit">Go Back</button>
+                    <button id="paybtn" type="submit">Proceed to Pay</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right">
+            <div class="orders">
+                <h1>Your Orders</h1>
+                <img class="contImg2"
+                src="image/checkout.png"
+                alt=""
+                />
+            </div>
+
+            <div id="rightcontent">
+
+                <div id="itemDetails">
+                    <!-- <h5 id="itenmfbkf"></h5> -->
+                </div>
+            </div>
+
+            <div class="itemPricing">
+                <div id="itemPricingDiv">
+                    <p>Sale</p>
+                    <p>Delivery</p>
+                    <h4>Total</h4>
+                </div>
+
+                <div>
+                    <p>Rs. <span id="salesPrice">253</span></p>
+                    <p>Rs. <span id="deliveryCharge">250</span></p>
+                    <h4 id="totalAmt"></h4>
+                </div>
             </div>
         </div>
     </div>
 </body>
+<script type="module" src="checkOut.js"></script>
 </html>
