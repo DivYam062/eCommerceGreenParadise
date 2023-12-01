@@ -38,6 +38,20 @@
   .checkbox{
     margin-top: 25px;
   }
+  .checkbox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .checkbox div {
+    width: 93%;
+    /* border: 1px solid red; */
+  }
+  #input_checkbox {
+    border-radius: 8px;
+    border: 2px solid grey;
+    padding: 0px;
+    width: 15px;
+  }
   #cont {
     margin-top: 5px;
     /* border: 1px solid red; */
@@ -61,3 +75,79 @@
     width: 100%;
     letter-spacing: 1px;
   }
+  #indian-states {
+    border: 1px solid red;
+    border-radius: 8px;
+    border: 2px solid grey;
+    padding: 12px;
+    width: 278px;
+  }
+  h1,h3 {
+  color: rgb(24, 81, 26);
+}
+.city {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  gap: 30px;
+}
+#backbtn {
+  background-color: white;
+  color: green;
+  border: 2px solid #054203;
+  border-radius: 10px;
+}
+#backbtn:hover {
+  background-color: #97af97;
+  color: #ffffff;
+}
+#paybtn {
+  color: white;
+  background-color: rgb(24, 81, 26);
+  width: 100%;
+  padding: 13px;
+}
+.contImg {
+  width: 150px;
+margin-top: -400px;
+}
+.contImg2 {
+  width: 190px;
+  margin-top: -80px;
+}
+.mainEmptyDiv {
+  width: 38%;
+  margin: auto;
+}
+
+.imgEmptyDiv img {
+  width: 100%;
+  /* filter: contrast(green); */
+  filter: saturate(200%);
+
+  /* Adjust the hue to make the image appear green */
+  filter: hue-rotate(-60deg);
+}
+
+.mainEmptyDiv h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #486e00;
+}
+.mainEmptyDiv a {
+  text-decoration: none;
+  /* border: 1px solid red; */
+  background-color: #486e00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.mainEmptyDiv a:hover {
+  background-color: #72ac08;
+}
+.link_catalog {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
