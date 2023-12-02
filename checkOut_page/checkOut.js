@@ -92,205 +92,205 @@ function updateTotalAmount() {
   localStorage.setItem("totalAmount", JSON.stringify(payable));
 }
 
-// if card is empty
-if (products.length > 0) {
-  displayData(products);
-} else {
-  emptyCard();
-}
+// // if card is empty
+// if (products.length > 0) {
+//   displayData(products);
+// } else {
+//   emptyCard();
+// }
 
-function emptyCard() {
-  document.querySelector("#kkcontainer").innerHTML = "";
-  // document.querySelector(".itemPricing").innerHTML = "";
+// function emptyCard() {
+//   document.querySelector("#kkcontainer").innerHTML = "";
+//   // document.querySelector(".itemPricing").innerHTML = "";
 
-  let mainDiv = document.createElement("div");
-  mainDiv.className = "mainEmptyDiv";
+//   let mainDiv = document.createElement("div");
+//   mainDiv.className = "mainEmptyDiv";
 
-  let imgDiv = document.createElement("div");
-  imgDiv.className = "imgEmptyDiv";
-  let img = document.createElement("img");
-  img.src = "/Images/cart_checkout/emptyCart.png";
+//   let imgDiv = document.createElement("div");
+//   imgDiv.className = "imgEmptyDiv";
+//   let img = document.createElement("img");
+//   img.src = "/Images/cart_checkout/emptyCart.png";
 
-  let h3 = document.createElement("h3");
-  h3.textContent = "Your cart is Empty";
+//   let h3 = document.createElement("h3");
+//   h3.textContent = "Your cart is Empty";
 
-  let linkDiv = document.createElement("div");
-  linkDiv.className = "link_catalog";
-  let link = document.createElement("a");
-  link.innerText = "Go to Catalog";
-  link.setAttribute("href", "/Product_Page/index.html");
+//   let linkDiv = document.createElement("div");
+//   linkDiv.className = "link_catalog";
+//   let link = document.createElement("a");
+//   link.innerText = "Go to Catalog";
+//   link.setAttribute("href", "/Product_Page/index.html");
 
-  linkDiv.append(link);
-  imgDiv.append(img);
-  mainDiv.append(imgDiv, h3, linkDiv);
-  document.querySelector("#kkcontainer").append(mainDiv);
-}
+//   linkDiv.append(link);
+//   imgDiv.append(img);
+//   mainDiv.append(imgDiv, h3, linkDiv);
+//   document.querySelector("#kkcontainer").append(mainDiv);
+// }
 
-function displayData(products) {
-  products.forEach((product, idx) => {
-    let container = document.createElement("div");
-    let imgdiv = document.createElement("div");
-    let img = document.createElement("img");
-    img.src = product.img;
-    imgdiv.append(img);
+// function displayData(products) {
+//   products.forEach((product, idx) => {
+//     let container = document.createElement("div");
+//     let imgdiv = document.createElement("div");
+//     let img = document.createElement("img");
+//     img.src = product.img;
+//     imgdiv.append(img);
 
-    let detailsdiv = document.createElement("div");
-    detailsdiv.className = "detailsDiv";
-    let divName = document.createElement("h5");
-    divName.className = "itemName";
-    divName.textContent = product.name;
+//     let detailsdiv = document.createElement("div");
+//     detailsdiv.className = "detailsDiv";
+//     let divName = document.createElement("h5");
+//     divName.className = "itemName";
+//     divName.textContent = product.name;
 
-    let divPrice = document.createElement("p");
-    divPrice.className = "itemPrice";
-    divPrice.textContent = "Price : " + product.price;
-    totalAmount += Number(product.price) * Number(product.qty);
+//     let divPrice = document.createElement("p");
+//     divPrice.className = "itemPrice";
+//     divPrice.textContent = "Price : " + product.price;
+//     totalAmount += Number(product.price) * Number(product.qty);
 
-    let quantityBox = document.createElement("div");
-    quantityBox.id = "quantityBox";
+//     let quantityBox = document.createElement("div");
+//     quantityBox.id = "quantityBox";
 
-    let minus = document.createElement("div");
-    minus.innerHTML = `<i class="fa-solid fa-minus"></i>`;
-    minus.setAttribute("class", "minus");
-    minus.onclick = () => {
-      if (count === 1) {
-        minus.disabled = true; 
-        return;
-      } else {  
-         minus.disabled = false; 
-        netqty = netqty - 1;
-        document.getElementById("quantity_bigscreen").textContent = netqty;
-        document.getElementById("quantity_smallscreen").textContent = netqty;
-        //
-        product.qty = Number(product.qty) - 1;
-        localStorage.setItem("cart", JSON.stringify(products));
-        count--;
-        qty.textContent = count;
-        totalAmount -= Number(product.price);
-        updateTotalAmount();
-      }
-    };
+//     let minus = document.createElement("div");
+//     minus.innerHTML = `<i class="fa-solid fa-minus"></i>`;
+//     minus.setAttribute("class", "minus");
+//     minus.onclick = () => {
+//       if (count === 1) {
+//         minus.disabled = true; 
+//         return;
+//       } else {  
+//          minus.disabled = false; 
+//         netqty = netqty - 1;
+//         document.getElementById("quantity_bigscreen").textContent = netqty;
+//         document.getElementById("quantity_smallscreen").textContent = netqty;
+//         //
+//         product.qty = Number(product.qty) - 1;
+//         localStorage.setItem("cart", JSON.stringify(products));
+//         count--;
+//         qty.textContent = count;
+//         totalAmount -= Number(product.price);
+//         updateTotalAmount();
+//       }
+//     };
 
-    let qty = document.createElement("div");
-    qty.className = "itemQuantity";
-    qty.textContent = Number(product.qty);
+//     let qty = document.createElement("div");
+//     qty.className = "itemQuantity";
+//     qty.textContent = Number(product.qty);
 
-    let count = Number(qty.textContent);
+//     let count = Number(qty.textContent);
 
-    let plus = document.createElement("div");
-    plus.innerHTML = `<i class="fa-solid fa-plus"></i>`;
-    plus.setAttribute("class", "plus");
-    plus.onclick = () => {
-      //
-      netqty = netqty + 1;
-      document.getElementById("quantity_bigscreen").textContent = netqty;
-      document.getElementById("quantity_smallscreen").textContent = netqty;
-      //
-      count++;
-      qty.textContent = count;
-      product.qty = Number(product.qty) + 1;
-      localStorage.setItem("cart", JSON.stringify(products));
-      totalAmount += Number(product.price);
-      updateTotalAmount();
-    };
+//     let plus = document.createElement("div");
+//     plus.innerHTML = `<i class="fa-solid fa-plus"></i>`;
+//     plus.setAttribute("class", "plus");
+//     plus.onclick = () => {
+//       //
+//       netqty = netqty + 1;
+//       document.getElementById("quantity_bigscreen").textContent = netqty;
+//       document.getElementById("quantity_smallscreen").textContent = netqty;
+//       //
+//       count++;
+//       qty.textContent = count;
+//       product.qty = Number(product.qty) + 1;
+//       localStorage.setItem("cart", JSON.stringify(products));
+//       totalAmount += Number(product.price);
+//       updateTotalAmount();
+//     };
 
-    let deleteItem = document.createElement("div");
-    deleteItem.innerHTML = `<i class="fa-solid fa-trash"></i>`;
-    deleteItem.setAttribute("class", "delete");
-    deleteItem.onclick = () => {
-      totalAmount -= Number(product.price) * Number(product.qty);
-      updateTotalAmount();
-      //
-      netqty = netqty - Number(product.qty);
-      console.log(qty, product.qty);
-      document.getElementById("quantity_bigscreen").textContent = netqty;
-      document.getElementById("quantity_smallscreen").textContent = netqty;
-      // qty.textContent = netqty;
-      // //
-      products = products.filter((el) => el.img !== product.img);
-      localStorage.setItem("cart", JSON.stringify(products));
-      container.remove();
-      if (products.length <= 0) {
-        emptyCard();
-      }
-    };
+//     let deleteItem = document.createElement("div");
+//     deleteItem.innerHTML = `<i class="fa-solid fa-trash"></i>`;
+//     deleteItem.setAttribute("class", "delete");
+//     deleteItem.onclick = () => {
+//       totalAmount -= Number(product.price) * Number(product.qty);
+//       updateTotalAmount();
+//       //
+//       netqty = netqty - Number(product.qty);
+//       console.log(qty, product.qty);
+//       document.getElementById("quantity_bigscreen").textContent = netqty;
+//       document.getElementById("quantity_smallscreen").textContent = netqty;
+//       // qty.textContent = netqty;
+//       // //
+//       products = products.filter((el) => el.img !== product.img);
+//       localStorage.setItem("cart", JSON.stringify(products));
+//       container.remove();
+//       if (products.length <= 0) {
+//         emptyCard();
+//       }
+//     };
 
-    quantityBox.append(minus, qty, plus, deleteItem);
+//     quantityBox.append(minus, qty, plus, deleteItem);
 
-    detailsdiv.append(divName, divPrice, quantityBox);
+//     detailsdiv.append(divName, divPrice, quantityBox);
 
-    container.append(imgdiv, detailsdiv);
-    details.append(container);
-  });
-}
+//     container.append(imgdiv, detailsdiv);
+//     details.append(container);
+//   });
+// }
 
-let sale = document.getElementById("salesPrice");
-let delivery = document.getElementById("deliveryCharge");
-totalAmt.textContent =
-  "Rs. " +
-  (totalAmount + Number(sale.textContent) + Number(delivery.textContent));
+// let sale = document.getElementById("salesPrice");
+// let delivery = document.getElementById("deliveryCharge");
+// totalAmt.textContent =
+//   "Rs. " +
+//   (totalAmount + Number(sale.textContent) + Number(delivery.textContent));
 
-// Validation
-var inputFields = document.querySelectorAll(".kkinputfields input");
-var continueButton = document.getElementById("kkcont");
+// // Validation
+// var inputFields = document.querySelectorAll(".kkinputfields input");
+// var continueButton = document.getElementById("kkcont");
 
-// Function to check if any input field is empty
-function checkInputs() {
-  let isEmailValid = true;
-  for (var i = 0; i < inputFields.length; i++) {
-    if (inputFields[i].value === "") {
-      continueButton.disabled = true; // Disable the "Continue" button
-      return;
-    }
-  }
-  const emailInput = document.getElementById("email"); // Assuming the email input has the id "email"
-  if (
-    !emailInput.value.includes("@") ||
-    !emailInput.value.includes("gmail") ||
-    !emailInput.value.includes(".com")
-  ) {
-    isEmailValid = false;
-  }
-  continueButton.disabled = !isEmailValid; // Enable the "Continue" button
-}
+// // Function to check if any input field is empty
+// function checkInputs() {
+//   let isEmailValid = true;
+//   for (var i = 0; i < inputFields.length; i++) {
+//     if (inputFields[i].value === "") {
+//       continueButton.disabled = true; // Disable the "Continue" button
+//       return;
+//     }
+//   }
+//   const emailInput = document.getElementById("email"); // Assuming the email input has the id "email"
+//   if (
+//     !emailInput.value.includes("@") ||
+//     !emailInput.value.includes("gmail") ||
+//     !emailInput.value.includes(".com")
+//   ) {
+//     isEmailValid = false;
+//   }
+//   continueButton.disabled = !isEmailValid; // Enable the "Continue" button
+// }
 
-for (var i = 0; i < inputFields.length; i++) {
-  inputFields[i].addEventListener("input", checkInputs);
-}
-checkInputs();
+// for (var i = 0; i < inputFields.length; i++) {
+//   inputFields[i].addEventListener("input", checkInputs);
+// }
+// checkInputs();
 
-var countryInput = document.getElementById("country");
-var stateInput = document.getElementById("indian-states");
-var cityInput = document.getElementById("city");
-var pinInput = document.getElementById("pin");
-var payButton = document.getElementById("kkpaybtn");
+// var countryInput = document.getElementById("country");
+// var stateInput = document.getElementById("indian-states");
+// var cityInput = document.getElementById("city");
+// var pinInput = document.getElementById("pin");
+// var payButton = document.getElementById("kkpaybtn");
 
-function checkInputsForDelivery() {
-  const countryValue = countryInput.value;
-  const stateValue = stateInput.value;
-  const cityValue = cityInput.value;
-  const pinValue = pinInput.value;
+// function checkInputsForDelivery() {
+//   const countryValue = countryInput.value;
+//   const stateValue = stateInput.value;
+//   const cityValue = cityInput.value;
+//   const pinValue = pinInput.value;
 
-  const isPinValid = /^[0-9]{6}$/.test(pinValue); // Check if pin is 6 digits
+//   const isPinValid = /^[0-9]{6}$/.test(pinValue); // Check if pin is 6 digits
 
-  // Check if any input field is empty or the pin is not valid
-  if (
-    countryValue === "" ||
-    stateValue === "" ||
-    cityValue === "" ||
-    pinValue === "" ||
-    !isPinValid
-  ) {
-    payButton.disabled = true; // Disable the "Proceed to Pay" button
-  } else {
-    payButton.disabled = false; // Enable the "Proceed to Pay" button
-  }
-}
+//   // Check if any input field is empty or the pin is not valid
+//   if (
+//     countryValue === "" ||
+//     stateValue === "" ||
+//     cityValue === "" ||
+//     pinValue === "" ||
+//     !isPinValid
+//   ) {
+//     payButton.disabled = true; // Disable the "Proceed to Pay" button
+//   } else {
+//     payButton.disabled = false; // Enable the "Proceed to Pay" button
+//   }
+// }
 
-// Add event listeners to the input fields
-countryInput.addEventListener("input", checkInputsForDelivery);
-stateInput.addEventListener("input", checkInputsForDelivery);
-cityInput.addEventListener("input", checkInputsForDelivery);
-pinInput.addEventListener("input", checkInputsForDelivery);
+// // Add event listeners to the input fields
+// countryInput.addEventListener("input", checkInputsForDelivery);
+// stateInput.addEventListener("input", checkInputsForDelivery);
+// cityInput.addEventListener("input", checkInputsForDelivery);
+// pinInput.addEventListener("input", checkInputsForDelivery);
 
-// Initial check on page load
-checkInputsForDelivery();
+// // Initial check on page load
+// checkInputsForDelivery();
