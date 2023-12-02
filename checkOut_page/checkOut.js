@@ -15,7 +15,7 @@ if (products.length > 0) {
   localStorage.setItem("totalAmount", JSON.stringify(totalAmount + 253 + 250));
 }
 
-document.getElementById("paybtn").addEventListener("click", function (e) {
+document.getElementById("kkpaybtn").addEventListener("click", function (e) {
   payable = JSON.parse(localStorage.getItem("totalAmount")) || 0;
 
   var options = {
@@ -59,25 +59,25 @@ products.forEach((ele) => {
   qty2.textContent = netqty;
 });
 
-document.getElementById("cont").addEventListener("click", () => {
-  let menu = document.getElementById("delivery");
+document.getElementById("kkcont").addEventListener("click", () => {
+  let menu = document.getElementById("kkdelivery");
   // let display = window.getComputedStyle(menu).display;
   menu.style.display = "block";
 
-  let menu2 = document.getElementById("personalInfo");
+  let menu2 = document.getElementById("kkpersonalInfoCont");
   menu2.style.display = "none";
 });
 
-document.getElementById("backbtn").addEventListener("click", () => {
-  let menu = document.getElementById("delivery");
+document.getElementById("kkbackbtn").addEventListener("click", () => {
+  let menu = document.getElementById("kkdelivery");
   // let display = window.getComputedStyle(menu).display;
   menu.style.display = "";
 
-  let menu2 = document.getElementById("personalInfo");
+  let menu2 = document.getElementById("kkpersonalInfoCont");
   menu2.style.display = "block";
 });
 
-let productContainer = document.getElementById("rightcontent");
+let productContainer = document.getElementById("kkrightcontent");
 let itemImg = document.getElementById("itemImg");
 let details = document.getElementById("itemDetails");
 let totalAmt = document.getElementById("totalAmt");
@@ -100,7 +100,7 @@ if (products.length > 0) {
 }
 
 function emptyCard() {
-  document.querySelector("#container").innerHTML = "";
+  document.querySelector("#kkcontainer").innerHTML = "";
   // document.querySelector(".itemPricing").innerHTML = "";
 
   let mainDiv = document.createElement("div");
@@ -123,7 +123,7 @@ function emptyCard() {
   linkDiv.append(link);
   imgDiv.append(img);
   mainDiv.append(imgDiv, h3, linkDiv);
-  document.querySelector("#container").append(mainDiv);
+  document.querySelector("#kkcontainer").append(mainDiv);
 }
 
 function displayData(products) {
@@ -231,7 +231,7 @@ totalAmt.textContent =
 
 // Validation
 var inputFields = document.querySelectorAll(".kkinputfields input");
-var continueButton = document.getElementById("cont");
+var continueButton = document.getElementById("kkcont");
 
 // Function to check if any input field is empty
 function checkInputs() {
