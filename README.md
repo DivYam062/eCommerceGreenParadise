@@ -30,14 +30,17 @@ Green Paradise is a fully functional e-commerce website designed for plant enthu
 - Responsive design for mobile and desktop users.
 
 ## Screenshots
- # LANDING PAGE
- [LANDING PAGE](./Images/readmeImg1.jpg)
- # CATALOG PAGE
- [CATALOG](./Images/readmeImg2.jpg)
- # PRODUCT DETAIL PAGE
- [PRODUCT DETAIL](./Images/readmeImg3.jpg)
- # CHECKOUT PAGE
- [CHECKOUT](./Images/readmeImg4.jpg)
+ LANDING PAGE
+ ![image](./Images/readmeImg1.jpg)
+ 
+ CATALOG PAGE
+ ![image](./Images/readmeImg2.jpg)
+ 
+ PRODUCT DETAIL PAGE
+ ![image](./Images/readmeImg3.jpg)
+ 
+ CHECKOUT PAGE
+ ![image](./Images/readmeImg4.jpg)
 
 ## Contributors
 - Divyam Singh Rauthan : [Github](https://github.com/DivYam062)
