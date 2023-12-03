@@ -42,7 +42,8 @@ CSS
 
 JAVASCRIPT
 
-## Screenshots
+## Snapshots of Pages
+
  LANDING PAGE
 
  ![image](./Images/readmeImg1.jpg)
@@ -60,6 +61,7 @@ JAVASCRIPT
  ![image](./Images/readmeImg4.jpg)
 
 ## Contributors
+
 # Divyam Singh Rauthan : [Github](https://github.com/DivYam062)
 # Madhukar Kumar: [Github](https://github.com/madhukarkr2468)
 # Pankaj Khatri : [Github](https://github.com/MrPK4699)
