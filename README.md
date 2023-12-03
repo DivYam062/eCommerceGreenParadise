@@ -3,6 +3,12 @@
 ![Green Paradise Logo](./Images/logo_green_heaven.png)
 
 
+# Objective
+The main objective of our project was to make practical use of all the coding skills that we learnt in Masai School to build the Project.
+
+# Group-Project
+This is a collaborative project bult by team of three members in a span of six days. My team members are Divyam Singh Rauthan, Madhukar Kumar and Pankaj Khatri.
+
 <!-- ## Table of Contents
 
 1. [Description](#description)
@@ -29,6 +35,13 @@ Green Paradise is a fully functional e-commerce website designed for plant enthu
 - User account creation and login.
 - Responsive design for mobile and desktop users.
 
+## Tech-Stack
+HTML
+
+CSS
+
+JAVASCRIPT
+
 ## Screenshots
  LANDING PAGE
 
@@ -47,6 +60,6 @@ Green Paradise is a fully functional e-commerce website designed for plant enthu
  ![image](./Images/readmeImg4.jpg)
 
 ## Contributors
-- Divyam Singh Rauthan : [Github](https://github.com/DivYam062)
-- Madhukar Kumar: [Github](https://github.com/madhukarkr2468)
-- Pankaj Khatri : [Github](https://github.com/MrPK4699)
+# Divyam Singh Rauthan : [Github](https://github.com/DivYam062)
+# Madhukar Kumar: [Github](https://github.com/madhukarkr2468)
+# Pankaj Khatri : [Github](https://github.com/MrPK4699)
