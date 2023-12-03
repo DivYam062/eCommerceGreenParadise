@@ -31,15 +31,19 @@ Green Paradise is a fully functional e-commerce website designed for plant enthu
 
 ## Screenshots
  LANDING PAGE
+
  ![image](./Images/readmeImg1.jpg)
  
  CATALOG PAGE
+ 
  ![image](./Images/readmeImg2.jpg)
  
  PRODUCT DETAIL PAGE
+ 
  ![image](./Images/readmeImg3.jpg)
  
  CHECKOUT PAGE
+ 
  ![image](./Images/readmeImg4.jpg)
 
 ## Contributors
