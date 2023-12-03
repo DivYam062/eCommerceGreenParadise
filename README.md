@@ -3,13 +3,13 @@
 ![Green Paradise Logo](./Images/logo_green_heaven.png)
 
 
-## Table of Contents
+<!-- ## Table of Contents
 
 1. [Description](#description)
 2. [Demo](#demo)
 3. [Features](#features)
 4. [Screenshots](#screenshots)
-5. [Contributors](#authors)
+5. [Contributors](#authors) -->
 
 ## Description
 
