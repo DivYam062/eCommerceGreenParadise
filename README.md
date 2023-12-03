@@ -23,7 +23,7 @@ Green Paradise is a fully functional e-commerce website designed for plant enthu
 
 ## Demo
 
-- [Live Demo](https://656a042a78668a08797fd494--spectacular-platypus-b6089d.netlify.app/)
+- [Live Demo](https://656cbd8b78668a2ac47fd273--jolly-kitten-c781a7.netlify.app/index.html)
 ## Features
 
 - Browse and search for a wide range of plants.
