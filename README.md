@@ -46,8 +46,8 @@ JAVASCRIPT
 
  LANDING PAGE
 
- ![image](./Images/readmeImg1.jpg)
- 
+ ![image](https://github.com/DivYam062/eCommerceGreenParadise/assets/106383705/ee8ad22a-cad5-429e-9f72-6bf31ee1de58)
+
  CATALOG PAGE
  
  ![image](./Images/readmeImg2.jpg)
