@@ -59,6 +59,10 @@ JAVASCRIPT
  
  ![image](https://github.com/DivYam062/eCommerceGreenParadise/assets/106383705/fc1c4f67-0a98-4273-84ed-b5010cb7d83e)
 
+ THANKYOU PAGE
+
+ ![image](https://github.com/DivYam062/eCommerceGreenParadise/assets/106383705/aee1b139-4da0-46a8-a709-ad87ba79b6ae)
+
 ## Contributors
 
 # Divyam Singh Rauthan : [Github](https://github.com/DivYam062)
