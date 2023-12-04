@@ -1,7 +1,6 @@
 # Green Paradise - A Breath of Fresh Air
 
-![Green Paradise Logo](./Images/logo_green_heaven.png)
-
+![image](https://github.com/DivYam062/eCommerceGreenParadise/assets/106383705/dfa77b75-4bc2-4c7a-a61f-2ed843ed85e8)
 
 # Objective
 The main objective of our project was to make practical use of all the coding skills that we learnt in Masai School to build the Project.
@@ -50,15 +49,15 @@ JAVASCRIPT
 
  CATALOG PAGE
  
- ![image](./Images/readmeImg2.jpg)
- 
+ ![image](https://github.com/DivYam062/eCommerceGreenParadise/assets/106383705/e28f287a-0fba-4501-a569-dcffceb9c441)
+
  PRODUCT DETAIL PAGE
  
- ![image](./Images/readmeImg3.jpg)
- 
+ ![image](https://github.com/DivYam062/eCommerceGreenParadise/assets/106383705/db272308-f973-47f5-b247-1467055b4b09)
+
  CHECKOUT PAGE
  
- ![image](./Images/readmeImg4.jpg)
+ ![image](https://github.com/DivYam062/eCommerceGreenParadise/assets/106383705/fc1c4f67-0a98-4273-84ed-b5010cb7d83e)
 
 ## Contributors
 
